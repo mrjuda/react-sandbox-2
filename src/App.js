@@ -1,27 +1,22 @@
 // App.js
 
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import WebHeader from './components/wHeader';
+import WebHome from './components/wHome';
+import WebCalc from './components/wCalc';
+import WebQuote from './components/wQuote';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <WebHeader />
+      <Routes>
+        <Route exact path="/mathmg" element={<WebHome />} />
+        <Route path="/WebCalc" element={<WebCalc />} />
+        <Route path="/WebQuote" element={<WebQuote />} />
+      </Routes>
     </div>
   );
 }
