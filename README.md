@@ -1,6 +1,6 @@
 # React Sandbox v2
 ## 📑 Project description
-**Build 2.2**
+**Build 2.3**
 This is a React-testing project for educational purposes only.
 The project was built using SCSS, JS, HTML and Webpack and tested through Jest.
 
