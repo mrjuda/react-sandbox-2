@@ -14,6 +14,8 @@ function WebHeader() {
         <li><a href="/WebCalc">Calculator</a></li>
         <li>|</li>
         <li><a href="/WebQuote">Quote</a></li>
+        <li>|</li>
+        <li><a href="/WebRedux">Redux</a></li>
       </ul>
     </div>
   );

@@ -7,6 +7,7 @@ import WebHeader from './components/wHeader';
 import WebHome from './components/wHome';
 import WebCalc from './components/wCalc';
 import WebQuote from './components/wQuote';
+import WebRedux from './components/wRedux';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/mathmg" element={<WebHome />} />
         <Route path="/WebCalc" element={<WebCalc />} />
         <Route path="/WebQuote" element={<WebQuote />} />
+        <Route path="/WebRedux" element={<WebRedux />} />
       </Routes>
     </div>
   );
