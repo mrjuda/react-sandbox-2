@@ -1,13 +1,12 @@
 // wRedux.js
 
 import './styles/wRedux.css';
+import Counter from './Counter';
 
 function WebRedux() {
   return (
     <div>
-      <span>
-        Redux is awesome.
-      </span>
+      <Counter />
     </div>
   );
 }
