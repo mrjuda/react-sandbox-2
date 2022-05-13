@@ -1,8 +1,6 @@
-/* eslint-disable no-unused-vars */
 // wQuote.js
 
 import './styles/wQuote.css';
-import React, { useState, useEffect } from 'react';
 
 function WebQuote() {
   return (
