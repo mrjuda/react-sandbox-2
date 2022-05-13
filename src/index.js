@@ -162,4 +162,16 @@ const visibilityFilter = (
 
 // }
 
+const obj1 = {
+  name: 'teixeira',
+  year: 1987,
+  wage: 30000,
+};
+
+console.log(obj1);
+
+const obj2 = { ...obj1, wage: 36000 };
+
+console.log(obj2);
+
 reportWebVitals();
