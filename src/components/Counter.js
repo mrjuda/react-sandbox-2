@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-unreachable */
 // Counter.js
@@ -8,6 +9,9 @@ import './styles/Counter.css';
 
 const msg1 = 'Redux reduces complexity';
 
+// console.log(store.getState());
+console.log(msg1);
+
 const Counter = (state = 0, action) => {
   switch (action.type) {
     case 'INCREMENT':
@@ -15,7 +19,7 @@ const Counter = (state = 0, action) => {
     case 'DECREMENT':
       return state - 1;
     default:
-      return msg1;
+      return state;
   }
 
   // const { createStore } = Redux;
