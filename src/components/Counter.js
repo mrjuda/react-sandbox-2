@@ -1,4 +1,10 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable implicit-arrow-linebreak */
+/* eslint-disable react/jsx-curly-newline */
+/* eslint-disable no-unused-vars */
 // Counter.js
+
+import ReactDOM from 'react-dom/client';
 
 import './styles/Counter.css';
 
@@ -13,6 +19,18 @@ const Counter = () => {
         return state;
     }
   };
+
+  const RCounter = ({
+    value,
+    onIncrement,
+    onDecrement,
+  }) => (
+    <div>
+      <h1>{value}</h1>
+      <button type="button" onClick={onIncrement}>+</button>
+      <button type="button" onClick={onDecrement}>-</button>
+    </div>
+  );
 
   const createStore = (reducer) => {
     let state;
@@ -40,8 +58,23 @@ const Counter = () => {
   const store = createStore(counter);
 
   const render = () => {
-    console.log('hooray');
     document.body.innerText = store.getState();
+    // ReactDOM.render(
+    //   <RCounter
+    //     value={store.getState()}
+    //     onIncrement={() =>
+    //       store.dispatch({
+    //         type: 'INCREMENT',
+    //       })
+    //     }
+    //     onDecrement={() =>
+    //       store.dispatch({
+    //         type: 'DECREMENT',
+    //       })
+    //     }
+    //   />,
+    //   document.getElementById('root'),
+    // );
   };
 
   store.subscribe(render);
